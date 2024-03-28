@@ -1,0 +1,12 @@
+create database sampleDB;
+use sampleDB;
+
+create table students(studenId int primary key, student_name varchar(20),course varchar(20));
+
+insert into students values(1,'anna','science'),(2,'anu','maths'),(3,'anil','business'),(4,'rana','maths'),(5,'nikhil','computer'),(6,'aysha','science'),(7,'nandu','maths'),(8,'milha','computer'),(9,'farik','maths'),(10,'aswathy','science');
+
+select * from students;
+
+select student_name from students where course='maths';
+
+select distinct course from students;
